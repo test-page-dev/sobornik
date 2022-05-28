@@ -74,10 +74,13 @@ input:focus {
     height: 100%;
     display: flex;
     align-items: center;
-    width: 40%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     transform: translateX(-200%);
     transition: transform 0.5s ease-in-out;
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
   }
   .header__nav.is-active {
     transform: translateX(0%);
@@ -88,6 +91,7 @@ input:focus {
     -moz-text-align-last: left;
     text-align-last: left;
     margin: 0;
+    padding: 0 50px 0 30px;
   }
   .header__nav-list a {
     padding: 15px 0;
@@ -240,9 +244,6 @@ input:focus {
   }
 
   /* Header */
-  .header__nav {
-    width: 70%;
-  }
   .header .logo {
     display: none;
   }
