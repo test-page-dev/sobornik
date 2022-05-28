@@ -820,6 +820,9 @@ i {
 .footer__bottom-central {
   max-width: 269px;
 }
+.footer__bottom-central a {
+  text-transform: uppercase;
+}
 .footer__bottom-central h5 {
   margin-bottom: 19px;
 }
