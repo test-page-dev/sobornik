@@ -17,14 +17,7 @@
 }
 @font-face {
   font-family: "Gilroy";
-  src: local("Gilroy-SemiBold"), url("../fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "CormorantInfant";
-  src: local("CormorantInfant-SemiBold"), url("../fonts/CormorantInfant-SemiBold.woff2") format("woff2"), url("../fonts/CormorantInfant-SemiBold.woff") format("woff");
+  src: local("Gilroy-Semibold"), url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -33,6 +26,13 @@
   font-family: "Gilroy";
   src: local("Gilroy-Bold"), url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CormorantInfant";
+  src: local("CormorantInfant-SemiBold"), url("../fonts/CormorantInfant-SemiBold.woff2") format("woff2"), url("../fonts/CormorantInfant-SemiBold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
