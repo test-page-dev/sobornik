@@ -560,7 +560,7 @@ i {
   line-height: 25px;
 }
 .fond-program--wide {
-  display: flex;
+  flex-direction: row;
   gap: 30px;
 }
 .fond-program--wide .fond-program__date {
@@ -611,6 +611,9 @@ i {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+.fond-program--wide:hover .fond-program__img img {
+  transform: scale(1);
 }
 
 /* Burger css */

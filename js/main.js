@@ -214,7 +214,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	if (document.querySelector('.g-slider')) {
 
 		let swiper2 = new Swiper(".g-slider__programs", {
-			autoHeight: true,
 			speed: 600,
 			slidesPerView: "auto",
 			freeMode: true,
@@ -238,7 +237,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 
 		let swiper3 = new Swiper(".g-slider__mass-media", {
-			autoHeight: true,
 			speed: 600,
 			spaceBetween: 30,
 			slidesPerView: "auto",
@@ -259,7 +257,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 
 		let swiper4 = new Swiper(".g-slider__homeless-help", {
-			autoHeight: true,
 			speed: 600,
 			spaceBetween: 30,
 			slidesPerView: "auto",
