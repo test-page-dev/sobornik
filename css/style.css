@@ -90,7 +90,7 @@ ul {
 img {
   max-width: 100%;
   width: 100%;
-  height: 100%;
+  height: auto;
   display: inline-block;
   -o-object-fit: cover;
   object-fit: cover;
@@ -1138,7 +1138,7 @@ i {
 }
 .programs-page__items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
   -moz-column-gap: 30px;
   column-gap: 30px;
   row-gap: clamp(40px, 5vw, 65px);
@@ -1151,10 +1151,12 @@ i {
   margin-bottom: clamp(9px, 1vw, 10px);
 }
 
+/* Program page */
 .program-page {
   padding-bottom: clamp(70px, 7vw, 85px);
 }
 .program-page__img {
+  min-height: 180px;
   display: flex;
   margin-bottom: clamp(25px, 4vw, 50px);
 }
@@ -1340,7 +1342,7 @@ i {
 /* Need help */
 .need-help {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
   -moz-column-gap: 30px;
   column-gap: 30px;
   row-gap: clamp(40px, 6vw, 65px);
