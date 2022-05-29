@@ -195,6 +195,11 @@ input:focus {
 .footer {
     padding: 60px 0;
   }
+
+  .program-page__inner {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media (max-width: 620px) {
   .fond-program--wide {
@@ -464,5 +469,10 @@ input:focus {
 @media (max-width: 425px) {
   .g-slider .swiper-slide {
     width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .g-button--m a {
+    padding: 12px 25px;
   }
 }

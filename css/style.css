@@ -536,6 +536,7 @@ i {
 
 /* Fond program */
 .fond-program__img {
+  display: flex;
   border-radius: 7px;
   overflow: hidden;
   margin-bottom: 32px;
@@ -1030,6 +1031,56 @@ i {
 }
 .programs-page .fond-program__title {
   margin-bottom: clamp(9px, 1vw, 10px);
+}
+
+.program-page {
+  padding-bottom: clamp(70px, 7vw, 85px);
+}
+.program-page__img {
+  display: flex;
+  margin-bottom: clamp(25px, 4vw, 50px);
+}
+.program-page__inner {
+  display: grid;
+  gap: 40px;
+  grid-template: auto/1fr 255px;
+}
+.program-page__text {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(14px, 1.5vw, 18px);
+  line-height: clamp(20px, 2vw, 24px);
+  gap: clamp(25px, 3vw, 35px);
+}
+.program-page__files {
+  color: var(--orange-color);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.program-page__files a {
+  flex-direction: column;
+  gap: 6px;
+  padding-left: 65px;
+  position: relative;
+}
+.program-page__files a::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/icons/file.svg);
+  left: 0;
+  top: 0;
+}
+.program-page__files span {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #949494;
 }
 
 /* Mass media */
