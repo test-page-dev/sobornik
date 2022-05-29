@@ -269,6 +269,7 @@ i {
   overflow: hidden;
   height: clamp(7px, 1vw, 10px);
   border-radius: 20px;
+  pointer-events: none;
 }
 .input-range input[type=range]::-webkit-slider-runnable-track {
   background: #E2E2E2;
@@ -278,7 +279,7 @@ i {
   width: clamp(7px, 1vw, 10px);
   height: clamp(7px, 1vw, 10px);
   background: var(--orange-color);
-  box-shadow: -200px 0 0 200px var(--orange-color);
+  box-shadow: -1000px 0 0 1000px var(--orange-color);
 }
 .input-range input[type=range]::-moz-range-track {
   height: clamp(7px, 1vw, 10px);
@@ -290,7 +291,7 @@ i {
   width: clamp(7px, 1vw, 10px);
   border: 0;
   border-radius: 0 !important;
-  box-shadow: -200px 0 0 200px var(--orange-color);
+  box-shadow: -1000px 0 0 1000px var(--orange-color);
   box-sizing: border-box;
 }
 .input-range input[type=range]::-ms-fill-lower {
@@ -342,12 +343,18 @@ i {
   flex-direction: column;
 }
 
+/* Img box */
+.img-box {
+  display: flex;
+}
+
 /* Breadcrumbs */
 .breadcrumbs {
   margin-bottom: 46px;
 }
 .breadcrumbs ul {
   display: flex;
+  flex-wrap: wrap;
   font-size: 14px;
   line-height: 17px;
   color: #BCBCBC;
@@ -674,6 +681,45 @@ i {
 }
 .fond-program--range .fond-program__img {
   margin-bottom: clamp(20px, 2vw, 25px);
+}
+
+/* Download files */
+.download-files {
+  color: var(--orange-color);
+  font-weight: 600;
+  font-size: clamp(15px, 1.5vw, 18px);
+  line-height: clamp(18px, 2vw, 21px);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.download-files a {
+  flex-direction: column;
+  gap: clamp(4px, 5vw, 6px);
+  padding-left: clamp(50px, 5vw, 65px);
+  position: relative;
+}
+.download-files a::before {
+  position: absolute;
+  content: "";
+  width: clamp(40px, 4vw, 50px);
+  height: clamp(40px, 4vw, 50px);
+  background-image: url(../img/icons/file.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  left: 0;
+  top: 0;
+}
+.download-files a:hover span {
+  color: var(--text-color);
+}
+.download-files span {
+  font-weight: 400;
+  font-size: clamp(11px, 1vw, 13px);
+  line-height: clamp(13px, 1vw, 16px);
+  color: #949494;
+  transition: color 0.2s;
 }
 
 /* Burger css */
@@ -1124,36 +1170,6 @@ i {
   line-height: clamp(20px, 2vw, 24px);
   gap: clamp(25px, 3vw, 35px);
 }
-.program-page__files {
-  color: var(--orange-color);
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 21px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-.program-page__files a {
-  flex-direction: column;
-  gap: 6px;
-  padding-left: 65px;
-  position: relative;
-}
-.program-page__files a::before {
-  position: absolute;
-  content: "";
-  width: 50px;
-  height: 50px;
-  background-image: url(../img/icons/file.svg);
-  left: 0;
-  top: 0;
-}
-.program-page__files span {
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
-  color: #949494;
-}
 
 /* Mass media */
 .mass-media {
@@ -1329,4 +1345,61 @@ i {
   column-gap: 30px;
   row-gap: clamp(40px, 6vw, 65px);
   padding-bottom: clamp(60px, 8vw, 90px);
+}
+
+/* Donation */
+.donation {
+  display: grid;
+  grid-template: auto/1fr minmax(300px, clamp(300px, 21vw, 400px));
+  gap: clamp(40px, 6vw, 70px);
+  padding-bottom: clamp(70px, 8vw, 90px);
+}
+.donation__img {
+  border-radius: 7px;
+  overflow: hidden;
+  margin-bottom: clamp(30px, 4vw, 48px);
+}
+.donation__text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: clamp(14px, 2vw, 18px);
+  line-height: clamp(20px, 2vw, 24px);
+}
+.donation .input-range {
+  margin-bottom: clamp(30px, 3vw, 35px);
+}
+.donation .input-range p {
+  margin-top: 15px;
+}
+.donation .input-range input[type=range] {
+  height: clamp(10px, 1vw, 15px);
+}
+.donation .input-range input[type=range]::-webkit-slider-thumb {
+  width: clamp(10px, 1vw, 15px);
+  height: clamp(10px, 1vw, 15px);
+}
+.donation .input-range input[type=range]::-moz-range-track {
+  height: clamp(10px, 1vw, 15px);
+}
+.donation .input-range input[type=range]::-moz-range-thumb {
+  height: clamp(10px, 1vw, 15px);
+  width: clamp(10px, 1vw, 15px);
+}
+.donation .input-range input[type=range]::-ms-thumb {
+  height: clamp(10px, 1vw, 15px);
+  width: clamp(10px, 1vw, 15px);
+}
+.donation .input-range input[type=range]::-ms-track {
+  height: clamp(10px, 1vw, 15px);
+}
+.donation .g-button {
+  padding-bottom: clamp(45px, 7vw, 75px);
+  border-bottom: 1px solid #ddd;
+  margin-bottom: clamp(45px, 7vw, 75px);
+}
+.donation .g-button a {
+  padding: 17px 20px;
+  width: 100%;
+  justify-content: center;
 }
