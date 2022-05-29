@@ -535,11 +535,20 @@ i {
 }
 
 /* Fond program */
+.fond-program {
+  flex-direction: column;
+}
+.fond-program:hover .fond-program__img img {
+  transform: scale(1.05);
+}
 .fond-program__img {
   display: flex;
   border-radius: 7px;
   overflow: hidden;
   margin-bottom: 32px;
+}
+.fond-program__img img {
+  transition: transform 0.4s;
 }
 .fond-program__title {
   font-weight: 600;
