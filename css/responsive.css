@@ -197,11 +197,11 @@ input:focus {
   }
 }
 @media (max-width: 620px) {
-  .fond-post--wide {
+  .fond-program--wide {
     flex-direction: column;
   }
 
-  .fond-post--wide .fond-post__img {
+  .fond-program--wide .fond-program__img {
     max-width: none;
   }
 }
@@ -405,27 +405,27 @@ input:focus {
     margin-bottom: 45px;
   }
 
-  .fond-post--wide .fond-post__date {
+  .fond-program--wide .fond-program__date {
     font-size: 14px;
     line-height: 17px;
     margin-bottom: 11px;
   }
 
-  .fond-post__title {
+  .fond-program__title {
     font-size: 20px;
     line-height: 24px;
   }
 
-  .fond-post__text {
+  .fond-program__text {
     font-size: 13px;
     line-height: 165%;
   }
 
-  .fond-post--wide .fond-post__text {
+  .fond-program--wide .fond-program__text {
     margin-bottom: 20px;
   }
 
-  .fond-post--wide .fond-post__views {
+  .fond-program--wide .fond-program__views {
     font-size: 12px;
     line-height: 14px;
   }
