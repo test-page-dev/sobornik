@@ -965,6 +965,15 @@ i {
 .main-slider .swiper-pagination-bullets .swiper-pagination-bullet-active {
   background-color: var(--orange-color);
 }
+.main-slider .swiper-button-next,
+.main-slider .swiper-button-prev {
+  transition: 0.2s;
+  box-shadow: 0 0 5px 2px transparent;
+}
+.main-slider .swiper-button-next:hover,
+.main-slider .swiper-button-prev:hover {
+  box-shadow: 0 0 5px 2px #fff;
+}
 .main-slider .swiper-button-next {
   right: clamp(30px, 10vw, 170px);
 }
