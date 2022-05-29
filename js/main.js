@@ -79,37 +79,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	}
 
-	// Custom range input
-	if (document.querySelector('.input-range')) {
-		let style = document.createElement('style');
-		document.head.appendChild(style);
-
-		let inputDiv = document.querySelector('.input-range');
-		let inputWidth = parseInt(window.getComputedStyle(inputDiv, null).getPropertyValue("width"));
-
-		let inputRange = document.querySelector(".input-range input[type='range']");
-		inputRange.style.width = inputWidth + "px";
-		let inputMin = inputRange.getAttribute('min');
-		let inputMax = inputRange.getAttribute('max');
-		let k = inputWidth / (inputMax - inputMin);
-
-		let inputLabel = document.querySelector('.input-range__label');
-		let ew = parseInt(window.getComputedStyle(inputLabel, null).getPropertyValue("width"));
-
-		inputLabel.innerHTML = inputRange.value;
-		inputLabel.style.left = ((inputRange.value * k) - (ew / 2)) + "px";
-		style.textContent = "input[type=range]::-webkit-slider-runnable-track{ background-image:-webkit-linear-gradient(left, let(--range-color) " + inputRange.value + "%,let(--range-bar-color) " + inputRange.value + "%)}"
-		style.textContent += "input[type=range]::-moz-range-track{ background-image:-moz-linear-gradient(left, let(--range-color) " + inputRange.value + "%,let(--range-bar-color) " + inputRange.value + "%)}"
-
-		inputRange.addEventListener('input', function () {
-			inputLabel.innerHTML = inputRange.value;
-			inputLabel.style.left = ((inputRange.value * k) - (ew / 2)) + "px";
-			style.textContent = "input[type=range]::-webkit-slider-runnable-track{ background-image:-webkit-linear-gradient(left, let(--range-color) " + inputRange.value + "%,let(--range-bar-color) " + inputRange.value + "%)}"
-			style.textContent += "input[type=range]::-moz-range-track{ background-image:-moz-linear-gradient(left, let(--range-color) " + inputRange.value + "%,let(--range-bar-color) " + inputRange.value + "%)}"
-
-		}, false);
-	}
-
 	// Main slider
 	if (document.querySelector('.main-slider')) {
 		let swiper = new Swiper(".main-slider__inner", {
@@ -272,7 +241,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 }, false); // <--------------------> //
 
-// !console.log();
 
 
 

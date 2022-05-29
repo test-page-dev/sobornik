@@ -263,6 +263,60 @@ i {
   width: 100%;
 }
 
+.input-range input[type=range] {
+  -webkit-appearance: none;
+  position: relative;
+  overflow: hidden;
+  height: clamp(7px, 1vw, 10px);
+  border-radius: 20px;
+}
+.input-range input[type=range]::-webkit-slider-runnable-track {
+  background: #E2E2E2;
+}
+.input-range input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: clamp(7px, 1vw, 10px);
+  height: clamp(7px, 1vw, 10px);
+  background: var(--orange-color);
+  box-shadow: -200px 0 0 200px var(--orange-color);
+}
+.input-range input[type=range]::-moz-range-track {
+  height: clamp(7px, 1vw, 10px);
+  background: #E2E2E2;
+}
+.input-range input[type=range]::-moz-range-thumb {
+  background: var(--orange-color);
+  height: clamp(7px, 1vw, 10px);
+  width: clamp(7px, 1vw, 10px);
+  border: 0;
+  border-radius: 0 !important;
+  box-shadow: -200px 0 0 200px var(--orange-color);
+  box-sizing: border-box;
+}
+.input-range input[type=range]::-ms-fill-lower {
+  background: var(--orange-color);
+}
+.input-range input[type=range]::-ms-thumb {
+  background: var(--orange-color);
+  height: clamp(7px, 1vw, 10px);
+  width: clamp(7px, 1vw, 10px);
+}
+.input-range input[type=range]::-ms-ticks-after {
+  display: none;
+}
+.input-range input[type=range]::-ms-ticks-before {
+  display: none;
+}
+.input-range input[type=range]::-ms-track {
+  background: #E2E2E2;
+  color: transparent;
+  height: clamp(7px, 1vw, 10px);
+  border: none;
+}
+.input-range input[type=range]::-ms-tooltip {
+  display: none;
+}
+
 /* Main wrapper */
 .wrapper {
   min-height: 100%;
@@ -614,6 +668,12 @@ i {
 }
 .fond-program--wide:hover .fond-program__img img {
   transform: scale(1);
+}
+.fond-program--range .input-range {
+  margin-bottom: clamp(25px, 3vw, 35px);
+}
+.fond-program--range .fond-program__img {
+  margin-bottom: clamp(20px, 2vw, 25px);
 }
 
 /* Burger css */
@@ -1259,4 +1319,14 @@ i {
 /* Homeless help */
 .homeless-help__inner {
   padding: 90px 0;
+}
+
+/* Need help */
+.need-help {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  row-gap: clamp(40px, 6vw, 65px);
+  padding-bottom: clamp(60px, 8vw, 90px);
 }
