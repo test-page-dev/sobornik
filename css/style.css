@@ -1160,6 +1160,9 @@ i {
   display: flex;
   margin-bottom: clamp(25px, 4vw, 50px);
 }
+.program-page__img img {
+  height: auto;
+}
 .program-page__inner {
   display: grid;
   gap: 40px;
