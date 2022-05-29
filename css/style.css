@@ -534,54 +534,54 @@ i {
   transform: rotate(180deg) translate(50%, 50%);
 }
 
-/* Fond post */
-.fond-post__img {
+/* Fond program */
+.fond-program__img {
   border-radius: 7px;
   overflow: hidden;
   margin-bottom: 32px;
 }
-.fond-post__title {
+.fond-program__title {
   font-weight: 600;
   font-size: 22px;
   line-height: 26px;
   margin-bottom: 10px;
 }
-.fond-post__text {
+.fond-program__text {
   line-height: 25px;
 }
-.fond-post--wide {
+.fond-program--wide {
   display: flex;
   gap: 30px;
 }
-.fond-post--wide .fond-post__date {
+.fond-program--wide .fond-program__date {
   color: var(--orange-color);
   font-size: 16px;
   font-weight: 600;
   line-height: 19px;
   margin-bottom: 15px;
 }
-.fond-post--wide .fond-post__img {
+.fond-program--wide .fond-program__img {
   max-width: 278px;
   flex-shrink: 0;
   margin: 0;
 }
-.fond-post--wide .fond-post__inner {
+.fond-program--wide .fond-program__inner {
   display: flex;
   flex-direction: column;
   padding: 3px 0;
 }
-.fond-post--wide .fond-post__title {
+.fond-program--wide .fond-program__title {
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
   margin-bottom: 9px;
 }
-.fond-post--wide .fond-post__text {
+.fond-program--wide .fond-program__text {
   font-size: 14px;
   line-height: 146.5%;
   margin-bottom: 29px;
 }
-.fond-post--wide .fond-post__views {
+.fond-program--wide .fond-program__views {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
@@ -589,7 +589,7 @@ i {
   margin: auto 0 9px 0;
   padding-left: 23px;
 }
-.fond-post--wide .fond-post__views::before {
+.fond-program--wide .fond-program__views::before {
   position: absolute;
   content: "";
   left: 0;
@@ -1025,10 +1025,10 @@ i {
   row-gap: clamp(40px, 5vw, 65px);
   margin-bottom: clamp(50px, 7vw, 75px);
 }
-.programs-page .fond-post__img {
+.programs-page .fond-program__img {
   margin-bottom: clamp(25px, 2vw, 32px);
 }
-.programs-page .fond-post__title {
+.programs-page .fond-program__title {
   margin-bottom: clamp(9px, 1vw, 10px);
 }
 
