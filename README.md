@@ -6,4 +6,4 @@ https://test-page-dev.github.io/sobornik/program.html
 
 https://test-page-dev.github.io/sobornik/need-help.html
 
-https://test-page-dev.github.io/sobornik/ponation.html
+https://test-page-dev.github.io/sobornik/donation.html
